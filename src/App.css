@@ -4,23 +4,92 @@
   box-sizing: border-box;
 }
 
+/*background of all the pages */
+
 .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
   width: 100vw;
   height: 100vh;
 }
 
 .banner-Home {
-   background: url(./assets/assets/home/background-home-mobile.jpg);
+   background: url(./assets/assets/home/background-home-mobile.jpg) no-repeat ;
 }
 
 .banner-Destination  {
-   background: url(./assets/assets/destination/background-destination-mobile.jpg);
+   background: url(./assets/assets/destination/background-destination-mobile.jpg) no-repeat;
 }
 
 .banner-Crew {
-   background: url(./assets/assets/crew/background-crew-mobile.jpg);
+   background: url(./assets/assets/crew/background-crew-mobile.jpg) no-repeat;
 }
 
 .banner-Tecnhology {
-   background: url(./assets/assets/technology/background-technology-mobile.jpg);
+   background: url(./assets/assets/technology/background-technology-mobile.jpg) no-repeat;
+}
+
+
+header {
+   padding: 2em;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-container {
+   position: absolute;
+   display: none;
+}
+
+.nav-container.active {
+   display: block;
+}
+
+
+@media (min-width:768px){
+
+   .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
+      background-size: contain;
+    }
+
+   .banner-Home {
+      background: url(./assets/assets/home/background-home-tablet.jpg) no-repeat ;
+   }
+   
+   .banner-Destination  {
+      background: url(./assets/assets/destination/background-destination-tablet.jpg) no-repeat;
+   }
+   
+   .banner-Crew {
+      background: url(./assets/assets/crew/background-crew-tablet.jpg) no-repeat;
+   }
+   
+   .banner-Tecnhology {
+      background: url(./assets/assets/technology/background-technology-tablet.jpg) no-repeat;
+   }
+}
+
+
+
+@media (min-width:1024px){
+   .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
+      background-size:  100%;
+    }
+}
+
+@media (min-width:1260px){
+
+   .banner-Home {
+      background: url(./assets/assets/home/background-home-desktop.jpg) no-repeat ;
+   }
+   
+   .banner-Destination  {
+      background: url(./assets/assets/destination/background-destination-desktop.jpg) no-repeat;
+   }
+   
+   .banner-Crew {
+      background: url(./assets/assets/crew/background-crew-desktop.jpg) no-repeat;
+   }
+   
+   .banner-Tecnhology {
+      background: url(./assets/assets/technology/background-technology-desktop.jpg) no-repeat;
+   }
 }
