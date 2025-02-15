@@ -9,6 +9,7 @@
 .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
   width: 100vw;
   height: 100vh;
+  
 }
 
 .banner-Home {
@@ -40,7 +41,14 @@ header {
 }
 
 .nav-container.active {
+   position: absolute;
+   top: 0;
    display: block;
+   right: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: red;
+   filter: blur(80);
 }
 
 
