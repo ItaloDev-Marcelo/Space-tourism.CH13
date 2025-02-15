@@ -45,9 +45,8 @@ header {
    top: 0;
    display: block;
    right: 0;
-   width: 100%;
+   width: 100vw;
    height: 100vh;
-   background-color: red;
    filter: blur(80);
 }
 
