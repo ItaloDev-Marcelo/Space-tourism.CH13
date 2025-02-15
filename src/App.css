@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner-Home {
+   background: url(./assets/assets/home/background-home-mobile.jpg);
+}
+
+.banner-Destination  {
+   background: url(./assets/assets/destination/background-destination-mobile.jpg);
+}
+
+.banner-Crew {
+   background: url(./assets/assets/crew/background-crew-mobile.jpg);
+}
+
+.banner-Tecnhology {
+   background: url(./assets/assets/technology/background-technology-mobile.jpg);
+}
