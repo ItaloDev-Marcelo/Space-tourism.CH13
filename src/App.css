@@ -154,11 +154,14 @@ ul {
 
    .nav-container, .nav-container.active{
       position: relative;
+      left: 3%;
       display: flex;
-      height: 7vh;
-      width: 60%;
-      background-color: red;
+      height: 96px;
+      width: 67%;
+      backdrop-filter: #1d2030 !important;
+      
       backdrop-filter: blur(100px) ;
+      overflow: hidden;
    }
 
    header {
@@ -170,9 +173,9 @@ ul {
       display: flex;
       content: '';
       position: absolute;
-      top: 6%;
-      left: 12%;
-      width: 200px;
+      top: 7%;
+      left: 13%;
+      width:23%;
       height: 1px;
       background-color: #fff;
    }
@@ -192,14 +195,50 @@ ul {
       max-width: 100%;
    }
 
-   
-
-
-
    .link {
       font-size: 1em;
-      margin: 1em;
+      margin: 1em 1.4em;
    }
+
+   .link:nth-of-type(1) {
+      margin-left: 4em;
+   }
+
+   .link.active .title::after {
+      position: absolute;
+      top: 65px;
+      left: 55px;
+      display: inline-flex;
+      width: 53px;
+      height: 2px;
+      background-color: #fff;
+   }
+
+   .link:nth-of-type(2).active .title::after {
+    
+      top: 65px;
+      left:147px;
+      width: 80px;
+   }
+
+   .link:nth-of-type(3).active .title::after {
+   
+      top: 65px;
+      left:275px;
+      width: 45px;
+   }
+
+   .link:nth-of-type(4).active .title::after {
+   
+      top: 65px;
+      left:355px;
+      width: 90px;
+   }
+
+   
+  
+   
+   
    
    
 
@@ -237,6 +276,25 @@ ul {
 }
 
 @media (min-width:1260px){
+
+   #logo::after {
+      display: flex;
+      content: '';
+      position: absolute;
+      top: 8%;
+      left:7%;
+      width:27%;
+      height: 1px;
+      background-color: #fff;
+   }
+
+
+   ul {
+       display: flex;      
+      justify-content: flex-end;
+      background-color: rebeccapurple;
+   }
+
 
    .banner-Home {
       background: url(./assets/assets/home/background-home-desktop.jpg) no-repeat ;
