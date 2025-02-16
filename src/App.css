@@ -85,9 +85,11 @@ header {
 
 ul {
    position: relative;
-   top: 25px;
+   top: 40px;
    list-style: none;
-   margin: 7em 1.2em 0 1.4em;
+   max-width: 100%;
+   margin: 7em 0 0 0;
+   padding-left: 1.4em;
 }
 
 
@@ -107,34 +109,36 @@ ul {
 }
 
 .link.active .title::after {
-   position: relative;
+   position: absolute;
    display: inline-block;
    content: '';
    top: 0;
-   left: 119px;
+   right: 0;
    width: 4px;
    height: 25px;
    background-color: #fff;
 }
 
+.link.active:nth-of-type(2) .title::after {
+   top: 31%;
+}
+
+.link.active:nth-of-type(3) .title::after {
+   top: 61%;
+}
+
+.link.active:nth-of-type(4) .title::after {
+   top: 88%;
+}
+
 #close {
-   position: fixed;
+   position:absolute;
    top: 30px;
-   right: 0;
+   right: 20px;
+   padding: 0 2em;
    margin: 1.2em 0;
 }
 
-.link:nth-of-type(2).active .title::after {
-   left: 62px;
-}
-
-.link:nth-of-type(3).active .title::after {
-   left: 124px;
-} 
-
- .link:nth-of-type(4).active .title::after {
-   left: 55px;
-} 
 
 .link strong {
    margin-right: .5em;
