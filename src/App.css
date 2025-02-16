@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 
@@ -10,7 +11,8 @@ html, body {
    height: 100%;
    margin: 0;
    padding: 0;
-   overflow: hidden; /* Evita rolagem indesejada */
+   font-size: 1em;
+  font-family: "Barlow Condensed", serif;
  }
 
  a{
@@ -72,20 +74,36 @@ header {
    top: 0;
    display: block;
    right: 0;
-   width: 75%;
+   width: 65%;
    height: 100vh;
-   background-color: rgba(255, 255, 255, 5%);
+   /* background: ; */
+   fill: #0B0D17;
+   backdrop-filter: blur(15px) ;
+   /* filter: blur(15px); */
    z-index: 1;
 }
 
 ul {
+   position: relative;
+   top: 25px;
    list-style: none;
    margin: 7em 1.2em 0 1.4em;
 }
 
+
+
 .link {
    font-size: 2em;
-   margin: 2em 0;
+   margin: 1em 0;
+}
+
+.link .num {
+   letter-spacing: 2px;
+}
+
+.link .title {
+   font-weight: 300;
+   text-transform: uppercase;
 }
 
 .link.active .title::after {
@@ -93,12 +111,30 @@ ul {
    display: inline-block;
    content: '';
    top: 0;
-   left: 15px;
+   left: 119px;
    width: 4px;
-   height: 17px;
-
+   height: 25px;
    background-color: #fff;
 }
+
+#close {
+   position: fixed;
+   top: 30px;
+   right: 0;
+   margin: 1.2em 0;
+}
+
+.link:nth-of-type(2).active .title::after {
+   left: 62px;
+}
+
+.link:nth-of-type(3).active .title::after {
+   left: 124px;
+} 
+
+ .link:nth-of-type(4).active .title::after {
+   left: 55px;
+} 
 
 .link strong {
    margin-right: .5em;
