@@ -12,8 +12,8 @@ export default function Navbar({whereTo0, whereTo1,whereTo2,whereTo3})  {
 
     return (
         <header  >
-          <a href='#'><img src={logo} alt='star-icon' /></a>
-          <Button variant='text' onClick={() => setToggleNav(!toggleNav)}><img src={hamburger}  alt=''  /></Button>
+          <a href='#' id='logo'><img src={logo} alt='star-icon' /></a>
+          <Button id='open' variant='text' onClick={() => setToggleNav(!toggleNav)}><img src={hamburger}  alt=''  /></Button>
           <nav className={toggleNav ? 'nav-container active' : 'nav-container'}>
           <Button id='close' variant='text' onClick={() => setToggleNav(!toggleNav)}><img src={close}  alt=''  /></Button>
          

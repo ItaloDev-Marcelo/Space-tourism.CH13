@@ -119,6 +119,11 @@ ul {
    background-color: #fff;
 }
 
+.link.active:hover .title::after {
+  opacity: .5;
+}
+
+
 .link.active:nth-of-type(2) .title::after {
    top: 31%;
 }
@@ -146,6 +151,61 @@ ul {
 
 
 @media (min-width:768px){
+
+   .nav-container, .nav-container.active{
+      position: relative;
+      display: flex;
+      height: 7vh;
+      width: 60%;
+      background-color: red;
+      backdrop-filter: blur(100px) ;
+   }
+
+   header {
+      padding: 2em 0 2em 2em;
+      align-items: center;
+   }
+   
+   #logo::after {
+      display: flex;
+      content: '';
+      position: absolute;
+      top: 6%;
+      left: 12%;
+      width: 200px;
+      height: 1px;
+      background-color: #fff;
+   }
+
+   #open, #close {
+      display: none;
+   }
+
+   ul {
+      position: relative;
+      align-self: center;
+      top: 0;
+      right: 0;
+      margin: 0 ;
+      padding-left: 0;
+      display: flex;
+      max-width: 100%;
+   }
+
+   
+
+
+
+   .link {
+      font-size: 1em;
+      margin: 1em;
+   }
+   
+   
+
+
+   
+   
 
    .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
       background-size: contain;
