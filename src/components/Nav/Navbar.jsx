@@ -12,7 +12,7 @@ export default function Navbar({whereTo0, whereTo1,whereTo2,whereTo3})  {
 
     return (
         <header  >
-          <a href='#' id='logo'><img src={logo} alt='star-icon' /></a>
+          <a href='#' id='logo'><img src={logo} alt='star-icon' /></a> <div className='line'></div>
           <Button id='open' variant='text' onClick={() => setToggleNav(!toggleNav)}><img src={hamburger}  alt=''  /></Button>
           <nav className={toggleNav ? 'nav-container active' : 'nav-container'}>
           <Button id='close' variant='text' onClick={() => setToggleNav(!toggleNav)}><img src={close}  alt=''  /></Button>

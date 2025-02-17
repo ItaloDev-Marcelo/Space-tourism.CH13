@@ -24,6 +24,8 @@ html, body {
    color: #fff;
  }
 
+ 
+
 /*background of all the pages */
 
 .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
@@ -150,6 +152,56 @@ ul {
 }
 
 
+.container-home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding:  0 2.5em 2em 2.5em;
+
+}
+
+
+#home-title {
+   font-size: 1.2em;
+   line-height: 77px;
+   color: #D0D6F9;
+   font-weight: 400;
+  font-family: "Bellefair";
+ }
+
+
+
+ #home-title .up-title {
+   font-size: 5em;
+   font-weight: 400;
+ }
+
+ #home-txt {
+   color: #D0D6F9;
+   letter-spacing: 1px;
+   word-spacing: 2px;
+   font-size: 1em;
+   line-height:25px;
+ }
+
+ .space-btn {
+   width: 144px;
+   height: 144px;
+   background-color: #fff;
+   color: #0B0D17;
+    font-size: 1.2em;
+   font-weight: 400;
+   border-radius: 50%;
+  font-family: "Bellefair";
+  border: none;
+  margin: 2.2em 0 0 0;
+  text-transform: uppercase;
+ }
+
+ 
+
 @media (min-width:768px){
 
    .nav-container, .nav-container.active{
@@ -169,16 +221,7 @@ ul {
       align-items: center;
    }
    
-   #logo::after {
-      display: flex;
-      content: '';
-      position: absolute;
-      top: 7%;
-      left: 13%;
-      width:23%;
-      height: 1px;
-      background-color: #fff;
-   }
+  
 
    #open, #close {
       display: none;
@@ -215,40 +258,25 @@ ul {
    }
 
    .link:nth-of-type(2).active .title::after {
-    
       top: 65px;
       left:147px;
       width: 80px;
    }
 
    .link:nth-of-type(3).active .title::after {
-   
       top: 65px;
       left:275px;
       width: 45px;
    }
 
    .link:nth-of-type(4).active .title::after {
-   
       top: 65px;
       left:355px;
       width: 90px;
    }
-
-   
-  
-   
-   
-   
    
 
-
    
-   
-
-   .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
-      background-size: contain;
-    }
 
    .banner-Home {
       background: url(./assets/assets/home/background-home-tablet.jpg) no-repeat ;
@@ -277,23 +305,60 @@ ul {
 
 @media (min-width:1260px){
 
-   #logo::after {
-      display: flex;
-      content: '';
-      position: absolute;
-      top: 8%;
-      left:7%;
-      width:27%;
-      height: 1px;
-      background-color: #fff;
+   body {
+      overflow: hidden;
    }
 
+   header {
+      padding: 2em;
+      align-items: center;
+   }
+   
+   .nav-container, .nav-container.active{
+      width: 92%;
+      left: 0;
+      justify-content: flex-end;
+   }
 
    ul {
-       display: flex;      
-      justify-content: flex-end;
-      background-color: rebeccapurple;
+      position: relative;
+      left: -2%;
    }
+
+   .link {
+      font-size: 1.4em;
+      margin: 1em 1.5em;
+   }
+
+
+   
+   .link.active .title::after {
+      position: absolute;
+      top: 77px;
+      left: 75px;
+      display: inline-flex;
+      width: 77px;
+   }
+
+   .link:nth-of-type(2).active .title::after {
+      top: 77px;
+      left:210px;
+      width: 120px;
+   }
+
+   .link:nth-of-type(3).active .title::after {
+      top: 77px;
+      left:385px;
+      width: 65px;
+   }
+
+   .link:nth-of-type(4).active .title::after {
+      top: 77px;
+      left:510px;
+      width: 120px;
+   }
+   
+
 
 
    .banner-Home {
