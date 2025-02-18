@@ -76,7 +76,7 @@ header {
    top: 0;
    display: block;
    right: 0;
-   width: 65%;
+   width: 57%;
    height: 100vh;
    /* background: ; */
    fill: #0B0D17;
@@ -97,8 +97,8 @@ ul {
 
 
 .link {
-   font-size: 2em;
-   margin: 1em 0;
+   font-size: 1.7em;
+   margin: 1.3em 0;
 }
 
 .link .num {
@@ -200,9 +200,12 @@ ul {
   text-transform: uppercase;
  }
 
- 
 
 @media (min-width:768px){
+
+   body {
+      overflow-x: hidden;
+   }
 
    .nav-container, .nav-container.active{
       position: relative;
@@ -275,33 +278,33 @@ ul {
       width: 90px;
    }
    
-
    
-
    .banner-Home {
       background: url(./assets/assets/home/background-home-tablet.jpg) no-repeat ;
+       background-size: cover;
+   background-position: center;
    }
    
    .banner-Destination  {
       background: url(./assets/assets/destination/background-destination-tablet.jpg) no-repeat;
+       background-size: cover;
+   background-position: center;
    }
    
    .banner-Crew {
       background: url(./assets/assets/crew/background-crew-tablet.jpg) no-repeat;
+       background-size: cover;
+   background-position: center;
    }
    
    .banner-Tecnhology {
       background: url(./assets/assets/technology/background-technology-tablet.jpg) no-repeat;
+       background-size: cover;
+   background-position: center;
    }
 }
 
 
-
-@media (min-width:1024px){
-   .banner-Home, .banner-Destination, .banner-Crew, .banner-Tecnhology {
-      background-size:  100%;
-    }
-}
 
 @media (min-width:1260px){
 
@@ -320,6 +323,7 @@ ul {
       justify-content: flex-end;
    }
 
+    
    ul {
       position: relative;
       left: -2%;
