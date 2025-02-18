@@ -97,8 +97,8 @@ ul {
 
 
 .link {
-   font-size: 1.7em;
-   margin: 1.3em 0;
+   font-size: 1.4em;
+   margin: 1.5em 0;
 }
 
 .link .num {
@@ -222,9 +222,8 @@ ul {
       left: 3%;
       display: flex;
       height: 96px;
-      width: 67%;
-      backdrop-filter: #1d2030 !important;
-      
+      width: 90%;
+      backdrop-filter: #0B0D17 !important;
       backdrop-filter: blur(100px) ;
       overflow: hidden;
    }
@@ -371,8 +370,6 @@ ul {
    }
 }
 
-
-
 @media (min-width:1260px){
 
    body {
@@ -442,6 +439,8 @@ ul {
       align-items: flex-start;
       text-align: left;
       padding: 2em 10em;
+      position: relative;
+      top: 12%;
    }
 
    #btn-container {
