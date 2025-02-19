@@ -19,7 +19,12 @@ export default function Destination()  {
     return (
         <section className='banner-Destination '>
             <Navbar whereTo0={'link'} whereTo1={'link active'} whereTo2={'link'} whereTo3={'link'}  />
-            <nav className='tabBar'>
+        
+
+           <div className='center'>
+           {
+                destination === 'moon' ? <div className='planets-wrapp'>
+                        <nav className='tabBar'>
                  <ul>
                     <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
                     <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
@@ -27,13 +32,42 @@ export default function Destination()  {
                     <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
                  </ul>
               </nav>
-
-             {
-                destination === 'moon' ? <MoonPage/> :
-                destination === 'mars' ? <MarsPage/> :
-                destination === 'europe' ? <EuropePage/> :
-                destination === 'titan' ? <TitansPage/> : null
+                    <MoonPage/> </div>   :
+                destination === 'mars' ? <div className='planets-wrapp'>
+                        <nav className='tabBar'>
+                 <ul>
+                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
+                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
+                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
+                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
+                 </ul>
+              </nav>
+              <MarsPage/>
+                </div>  :
+                destination === 'europe' ? <div className='planets-wrapp'>
+                              <nav className='tabBar'>
+                 <ul>
+                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
+                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
+                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
+                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
+                 </ul>
+              </nav>
+              <EuropePage/>
+                </div>  :
+                destination === 'titan' ? <div className='planets-wrapp'>
+                          <nav className='tabBar'>
+                 <ul>
+                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
+                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
+                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
+                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
+                 </ul>
+              </nav>
+                <TitansPage/>
+                </div>  : null
              }
+           </div>
 
 
         </section>
