@@ -14,7 +14,6 @@ function App() {
         <Route path="/destination" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
         <Route path="/tecnhology" element={<Tecnhology />} />
-        <Route path="*" element={<Error404  />} />
        </Routes>
     
   )
