@@ -210,35 +210,45 @@ ul {
    color: gray;
  }
 
- .center {
+.box--Container {
+   
    color: #fff; 
+}
+
+ .Mars, .Europa, .Titan{
+   display: none !important;
  }
 
- .tabBar  {
-   margin-bottom: 2em;
+ .box--Container .Moon {
+   display: block;
  }
+
+
+ 
 
  .tabBar ul {
-   position: relative;
-   top: 5.7em;
-  display: flex;
-  margin-left: 18%;
+  display: flex ;
+  position: relative;
+  top: -5em;
+  justify-content: center;
   z-index: 1;
  }
 
  .tabBar ul li{
+   display: flex;
    margin: 0 .7em;
 }
 
+
+
 .planet-container img {
    max-width: 50%;
-   margin-bottom: 3em;
 }
 
 
 .box--Container {
    position: relative;
-   top: -150px;
+   top: 10px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -255,9 +265,11 @@ ul {
 }
 
 .planet-content .planet-title {
+   position: relative;
+   top: -1em;
    font-size: 2em;
    letter-spacing: 5px;
-   margin: .5em 0;
+   margin:  0;
     text-transform: uppercase;
    font-weight: 400;
   font-family: "Bellefair";
@@ -267,7 +279,7 @@ ul {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin: 1.2em 0;
+   margin: 1em 0;
 }
 
 .planet-content  p {

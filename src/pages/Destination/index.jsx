@@ -1,11 +1,8 @@
 
 import { useState } from 'react';
-import EuropePage from '../../components/Destination-pages/Europe';
-import MarsPage from '../../components/Destination-pages/Mars';
-import MoonPage from '../../components/Destination-pages/Moon';
-import TitansPage from '../../components/Destination-pages/Titans';
+import data from './data'
 import Navbar from '../../components/Nav/Navbar';
-
+import Slider from './slider/index'
 export default function Destination()  {
 
     const [destination, setDestination]  =  useState('moon') 
@@ -19,56 +16,16 @@ export default function Destination()  {
     return (
         <section className='banner-Destination '>
             <Navbar whereTo0={'link'} whereTo1={'link active'} whereTo2={'link'} whereTo3={'link'}  />
-        
-
-           <div className='center'>
-           {
-                destination === 'moon' ? <div className='planets-wrapp'>
-                        <nav className='tabBar'>
-                 <ul>
-                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
-                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
-                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
-                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
-                 </ul>
-              </nav>
-                    <MoonPage/> </div>   :
-                destination === 'mars' ? <div className='planets-wrapp'>
-                        <nav className='tabBar'>
-                 <ul>
-                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
-                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
-                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
-                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
-                 </ul>
-              </nav>
-              <MarsPage/>
-                </div>  :
-                destination === 'europe' ? <div className='planets-wrapp'>
-                              <nav className='tabBar'>
-                 <ul>
-                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
-                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
-                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
-                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
-                 </ul>
-              </nav>
-              <EuropePage/>
-                </div>  :
-                destination === 'titan' ? <div className='planets-wrapp'>
-                          <nav className='tabBar'>
-                 <ul>
-                    <li className={destination === 'moon'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('moon')}><a href='#'>MOON</a></li>
-                    <li className={destination === 'mars'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('mars')}><a href='#'>MARS</a></li>
-                    <li className={destination === 'europe'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('europe')}><a href='#'>EUROPE</a></li>
-                    <li className={destination === 'titan'  ? 'tab-link active' : 'tab-link' }  onClick={() => nav('titan')}><a href='#'>TITAN</a></li>
-                 </ul>
-              </nav>
-                <TitansPage/>
-                </div>  : null
+             {
+              data.map(i =>  {
+                return (
+                  <Slider icon={i.icon} title={i.title} text={i.text} 
+                tab1={i.tab1} tab2={i.tab2} tab3={i.tab3} tab4={i.tab4}
+                info0={i.inf0} info1={i.info1} info2={i.info2} info3={i.info3}
+                />
+                ) 
+              })
              }
-           </div>
-
 
         </section>
     )

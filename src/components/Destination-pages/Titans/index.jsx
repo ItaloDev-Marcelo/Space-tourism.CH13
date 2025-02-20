@@ -11,6 +11,16 @@ export default function TitansPage() {
             </Box>
             <Box className='planet-content' component='section'>
                 <Box component='article'>
+                  <nav className='Tab-Bar'>
+                  <nav className='tabBar'>
+                 <ul>
+                    <li className={tab1} ><a href=''>MOON</a></li>
+                    <li className={tab2} ><a href=''>MARS</a></li>
+                    <li className={tab3} ><a href=''>EUROPE</a></li>
+                    <li className={tab4} ><a href=''>TITAN</a></li>
+                 </ul>
+              </nav>
+                  </nav>
                   <Typography component='h2' className='planet-title'> Titan
                   </Typography>
                   <Typography component='p'> The only moon known to have a dense atmosphere other than Earth, Titan 
