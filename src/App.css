@@ -211,20 +211,24 @@ ul {
  }
 
 .box--Container {
-   
    color: #fff; 
 }
 
- .Mars, .Europa, .Titan{
-   display: none !important;
+
+
+ /* .box--Container:target {
+   display: block;
  }
 
  .box--Container .Moon {
    display: block;
+ } */
+
+
+ .box--Container:not(:target) {
+   display: none;
  }
 
-
- 
 
  .tabBar ul {
   display: flex ;
@@ -238,6 +242,21 @@ ul {
    display: flex;
    margin: 0 .7em;
 }
+
+.tab-link.active::before {
+   content: '';
+   position: absolute;
+   top: 2em;
+   display: block;
+   width: 25px;
+   height: 2px;
+   background-color: #fff;
+}
+
+.tab-link:nth-of-type(3).active::before {
+   width: 37px;
+}
+
 
 
 

@@ -3,7 +3,7 @@ import {Box, Typography} from '@mui/material'
 export default function EuropePage({icon,title,text,info0,info1,info2,info3,tab1, tab2, tab3,tab4}) {
 
       return  (
-            <Box className={'box--Container ' + title}>
+            <Box className={'box--Container ' + title} id={title} >
             <Box className='planet-container'>
                 <img src={icon} alt={title} />
             </Box>
@@ -11,10 +11,10 @@ export default function EuropePage({icon,title,text,info0,info1,info2,info3,tab1
                 <Box component='article'>
                   <nav className='tabBar'>
                   <ul>
-                    <li className={tab1} onClick={() => navigate('/moon')}><a href=''>MOON</a></li>
-                    <li className={tab2} onClick={() => navigate('/mars')}><a href=''>MARS</a></li>
-                    <li className={tab3} onClick={() => navigate('/europe')}><a href=''>EUROPE</a></li>
-                    <li className={tab4} onClick={() => navigate('/titan')}><a href=''>TITAN</a></li>
+                    <li className={tab1} ><a href='#Moon'>MOON</a></li>
+                    <li className={tab2} ><a href='#Mars'>MARS</a></li>
+                    <li className={tab3} ><a href='#Europa'>EUROPE</a></li>
+                    <li className={tab4} ><a href='#Titan'>TITAN</a></li>
                  </ul>
                   </nav>
                   <Typography component='h2' className='planet-title'>{title}</Typography>
