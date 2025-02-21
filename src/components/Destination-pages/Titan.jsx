@@ -2,7 +2,7 @@
 import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
 import { GlobalContext } from '../../context/GlobalContext'
-import Titan from '../../../assets/assets/destination/image-titan.webp';
+import Titan from '../../assets/assets/destination/image-titan.webp';
 
 export default function TitansPage({tab1, tab2, tab3, tab4}) {
 

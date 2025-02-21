@@ -4,7 +4,7 @@ import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
 import { GlobalContext } from '../../context/GlobalContext'
 
-import Moon from '../../../assets/assets/destination/image-moon.webp';
+import Moon from '../../assets/assets/destination/image-moon.webp';
 
 export default function MoonPage({tab1, tab2, tab3, tab4}) {
 

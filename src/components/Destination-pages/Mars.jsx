@@ -2,7 +2,7 @@
 import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
 import { GlobalContext } from '../../context/GlobalContext'
-import Mars from '../../../assets/assets/destination/image-mars.webp';
+import Mars from '../../assets/assets/destination/image-mars.webp';
 
 export default function MarsPage({tab1, tab2, tab3, tab4}) {
   const {destinationData, nav } = useContext(GlobalContext) 

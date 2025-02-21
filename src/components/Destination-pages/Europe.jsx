@@ -1,7 +1,7 @@
 import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
 import { GlobalContext } from '../../context/GlobalContext'
-import Europe from '../../../assets/assets/destination/image-europa.webp';
+import Europe from '../../assets/assets/destination/image-europa.webp';
 
 export default function EuropePage({tab1, tab2, tab3, tab4}) {
 

@@ -1,10 +1,10 @@
 // import data from './data'
 // import Slider from './slider/index'
 import Navbar from '../../components/Nav/Navbar';
-import MoonPage from '../../components/Destination-pages/Moon/index'
-import MarsPage from '../../components/Destination-pages/Mars/index'
-import EuropePage from '../../components/Destination-pages/Europe/index'
-import TitanPage from '../../components/Destination-pages/Titans/index'
+import MoonPage from '../../components/Destination-pages/Moon'
+import MarsPage from '../../components/Destination-pages/Mars'
+import EuropePage from '../../components/Destination-pages/Europe'
+import TitanPage from '../../components/Destination-pages/Titan'
 export default function Destination()  {
 
 
