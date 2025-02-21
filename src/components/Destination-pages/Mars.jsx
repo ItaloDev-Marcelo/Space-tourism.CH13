@@ -1,13 +1,15 @@
 
 import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
-import { GlobalContext } from '../../../context/GlobalContext'
+import { GlobalContext } from '../../context/GlobalContext'
 import Mars from '../../../assets/assets/destination/image-mars.webp';
 
 export default function MarsPage({tab1, tab2, tab3, tab4}) {
   const {destinationData, nav } = useContext(GlobalContext) 
     return  (
         <Box className={destinationData === 'Mars' ? 'box--Container active' : 'box--Container'}>
+           <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+          
         <Box className='planet-container'>
               <img src={Mars} alt='mars' />
         </Box>

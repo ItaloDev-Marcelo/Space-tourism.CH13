@@ -2,7 +2,7 @@
 import {Box, Typography} from '@mui/material'
 
 import {useContext} from 'react';
-import { GlobalContext } from '../../../context/GlobalContext'
+import { GlobalContext } from '../../context/GlobalContext'
 
 import Moon from '../../../assets/assets/destination/image-moon.webp';
 
@@ -12,6 +12,8 @@ export default function MoonPage({tab1, tab2, tab3, tab4}) {
      
 
      return <Box className={destinationData === 'Moon' ? 'box--Container active' : 'box--Container'}>
+       <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+          
      <Box className='planet-container'>
        <img src={Moon} alt='moon' />
      </Box>

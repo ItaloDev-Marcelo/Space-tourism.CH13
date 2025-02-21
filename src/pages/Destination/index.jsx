@@ -22,10 +22,10 @@ export default function Destination()  {
         <section className='banner-Destination '>
             <div className='md'>
             <Navbar whereTo0={'link'} whereTo1={'link active'} whereTo2={'link'} whereTo3={'link'}  />
-            <MoonPage  tab1={'link active'} tab2={'link'} tab3={'link'} tab4={'link'} />
-            <MarsPage  tab1={'link'} tab2={'link active'} tab3={'link'} tab4={'link'} />
-            <EuropePage  tab1={'link'} tab2={'link'} tab3={'link active'} tab4={'link'}/>
-            <TitanPage tab1={'link'} tab2={'link'} tab3={'link'} tab4={'link active'} />
+            <MoonPage  tab1={'tab-link active'} tab2={'tab-link'} tab3={'tab-link'} tab4={'tab-link'} />
+            <MarsPage  tab1={'tab-link'} tab2={'tab-link active'} tab3={'tab-link'} tab4={'tab-link'} />
+            <EuropePage  tab1={'tab-link'} tab2={'tab-link'} tab3={'tab-link active'} tab4={'tab-link'}/>
+            <TitanPage tab1={'tab-link'} tab2={'tab-link'} tab3={'tab-link'} tab4={'tab-link active'} />
             </div>
         </section>
     )

@@ -1,7 +1,7 @@
 
 import {Box, Typography} from '@mui/material'
 import {useContext} from 'react';
-import { GlobalContext } from '../../../context/GlobalContext'
+import { GlobalContext } from '../../context/GlobalContext'
 import Titan from '../../../assets/assets/destination/image-titan.webp';
 
 export default function TitansPage({tab1, tab2, tab3, tab4}) {
@@ -10,6 +10,8 @@ export default function TitansPage({tab1, tab2, tab3, tab4}) {
 
       return  (
             <Box className={destinationData === 'Titan' ? 'box--Container active' : 'box--Container'}>
+               <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+          
             <Box className='planet-container'>
                 <img src={Titan} alt='titan' />
             </Box>
