@@ -1,16 +1,27 @@
-
 import {Box, Typography} from '@mui/material'
+import {useContext} from 'react';
+import { GlobalContext } from '../../../context/GlobalContext'
 import Europe from '../../../assets/assets/destination/image-europa.webp';
 
-export default function EuropePage() {
+export default function EuropePage({tab1, tab2, tab3, tab4}) {
+
+  const {destinationData, nav } = useContext(GlobalContext) 
 
       return  (
-            <Box className='box--Container'>
+            <Box className={destinationData === 'Europe' ? 'box--Container active' : 'box--Container'}>
             <Box className='planet-container'>
                 <img src={Europe} alt='europe' />
             </Box>
             <Box className='planet-content' component='section'>
                 <Box component='article'>
+                <nav className='tabBar'>
+                 <ul>
+                    <li className={tab1} onClick={() => nav('Moon')} ><a href='#'>MOON</a></li>
+                    <li className={tab2} onClick={() => nav('Mars')}><a href='#'>MARS</a></li>
+                    <li className={tab3} onClick={() => nav('Europe')}><a href='#'>EUROPE</a></li>
+                    <li className={tab4} onClick={() => nav('Titan')} ><a href='#'>TITAN</a></li>
+                 </ul>
+              </nav>
                   <Typography component='h2' className='planet-title'>Europa</Typography>
                   <Typography component='p'> The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
   winter lover’s dream. With an icy surface, it’s perfect for a bit of 

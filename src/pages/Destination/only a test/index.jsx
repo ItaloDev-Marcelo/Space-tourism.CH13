@@ -1,6 +1,7 @@
 import {Box, Typography} from '@mui/material'
 
-export default function EuropePage({icon,title,text,info0,info1,info2,info3,tab1, tab2, tab3,tab4}) {
+export default function EuropePage({icon,title,text,info0,info1,info2,info3,tab1, tab2, tab3,tab4,hundleUpdate,select}) {
+
 
       return  (
             <Box className={'box--Container ' + title} id={title} >

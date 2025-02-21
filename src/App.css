@@ -198,7 +198,7 @@ ul {
    color: #0B0D17;
     font-size: 1.2em;
    font-weight: 400;
-   border-radius: 50%;
+   border-radius: 50% ;     
   font-family: "Bellefair";
   border: none;
   text-transform: uppercase;
@@ -210,25 +210,60 @@ ul {
    color: gray;
  }
 
-.box--Container {
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+ .planet-container img {
+    animation: 30s linear infinite rotate;
+ }
+
+
+ 
+ .box--Container {
+   display: none !important;
    color: #fff; 
+}
+
+.box--Container.active {
+   color: #fff; 
+   display: block !important;
 }
 
 
 
- /* .box--Container:target {
+
+
+
+/* .box--Container:nth-child(1):not(:target) {
+   color: #fff; 
    display: block;
- }
+}
 
- .box--Container .Moon {
-   display: block;
- } */
-
-
- .box--Container:not(:target) {
+.box--Container:nth-child(2):not(:target) {
    display: none;
- }
+}
 
+.box--Container:nth-child(3):not(:target) {
+   display: none;
+}
+
+.box--Container:nth-child(4):not(:target) {
+   display: none;
+}
+  */
+
+
+
+ 
 
  .tabBar ul {
   display: flex ;
