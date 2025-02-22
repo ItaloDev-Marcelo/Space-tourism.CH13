@@ -226,7 +226,6 @@ ul {
     animation: 30s linear infinite rotate;
  }
 
-
  .box--Container {
    display: none !important;
    color: #fff; 
@@ -235,8 +234,6 @@ ul {
 .box--Container.active {
    display: block !important;
 }
-
- 
 
 .tabBar ul {
   display: flex ;
@@ -268,16 +265,19 @@ ul {
 .global-title {
   font-family: "Barlow Condensed", serif;
   font-weight: 400; 
-   position: absolute;
-   top: -2.2em;
    text-transform: uppercase;
-   left: 8em;
    letter-spacing: 2px;
    font-size: 1.2em;
    margin-bottom: 2em;
+   color: #fff;
 }
 
-.destination-title .des-num {
+.crew--content > h2 {
+   font-size: 1.7em;
+}
+
+
+ .des-num {
    opacity: .5;
 }
 
@@ -305,8 +305,6 @@ ul {
 }
 
 .planet-content .planet-title {
-   position: relative;
-   top: -1em;
    font-size: 2em;
    letter-spacing: 5px;
    margin:  0;
@@ -329,11 +327,47 @@ ul {
 
 
 .crew-item {
-   display: none !important;
+   display: none;
+   padding: 2em;
+}
+
+.crew-item  .global-title .des-num {
+   font-weight: 500;
 }
 
 .crew-item.active {
-   display: block !important;
+   display: inline-block ;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+.container-Image img {
+   position: relative;
+   top: 2em;
+   max-width: 65%;
+}
+
+
+.points-container {
+   display: flex;
+   justify-content: space-between;
+   width: 100px;
+   height: 15px;
+   margin: 1.7em auto 0 auto;
+}
+
+.points-container .pagination  {
+   cursor: pointer;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #0B0D17;
+   opacity: .7;
+}
+
+.points-container .pagination.active {
+   background: #fff;
 }
 
 @media (min-width:768px){

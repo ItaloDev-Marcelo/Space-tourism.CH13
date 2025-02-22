@@ -5,7 +5,7 @@ import Victor from '../../assets/assets/crew/image-victor-glover.webp'
 export default function Commander() {
    const {pagination, HundleBubble } = useContext(GlobalContext);
     return (
-         <Box component='section' className={pagination ===  'Bob1' ? 'crew-item active' : 'crew-item'}>
+         <Box component='section' className={pagination ===  'Bob3' ? 'crew-item active' : 'crew-item'}>
            <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
             <Box className='crew--content' >
               <Typography component='h2'>Pilot
