@@ -8,9 +8,10 @@ export default function MarsPage({tab1, tab2, tab3, tab4}) {
   const {destinationData, nav } = useContext(GlobalContext) 
     return  (
         <Box className={destinationData === 'Mars' ? 'box--Container active' : 'box--Container'}>
-           <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
-          
+        
         <Box className='planet-container'>
+        <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+          
               <img src={Mars} alt='mars' />
         </Box>
         <Box className='planet-content' component='section'>

@@ -11,8 +11,8 @@ export default function Commander1() {
          <Box component='section' className={pagination ===  'Bob1' ? 'crew-item active' : 'crew-item'}>
             <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
             <Box className='crew--content' >
-              <Typography component='h2'>  Commander
-              <Typography component='strong'>Douglas Hurley</Typography> <br /> </Typography>
+              <Typography component='h2'>  <span className='title-op'>Commander</span> <br /> 
+              <Typography component='strong'>Douglas Hurley</Typography>  </Typography>
               <Typography component='p'>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
   and former NASA astronaut. He launched into space for the third time as 
   commander of Crew Dragon Demo-2.</Typography>

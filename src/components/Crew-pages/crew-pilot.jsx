@@ -8,7 +8,7 @@ export default function Commander() {
          <Box component='section' className={pagination ===  'Bob3' ? 'crew-item active' : 'crew-item'}>
            <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
             <Box className='crew--content' >
-              <Typography component='h2'>Pilot
+              <Typography component='h2'> <span className='title-op'>Pilot</span> <br /> 
               <Typography component='strong'>Victor Glover</Typography> </Typography>
               <Typography component='p'>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
   International Space Station. Glover is a commander in the U.S. Navy where 

@@ -8,7 +8,7 @@ export default function Commander() {
          <Box component='section' className={pagination ===  'Bob4' ? 'crew-item active' : 'crew-item'}>
            <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
             <Box className='crew--content' >
-              <Typography component='h2'> Mission Specialist
+              <Typography component='h2'> <span className='title-op'>Mission Specialist</span>  <br /> 
               <Typography component='strong'>Mark Shuttleworth</Typography> </Typography>
               <Typography component='p'>  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
   the Linux-based Ubuntu operating system. Shuttleworth became the first South 

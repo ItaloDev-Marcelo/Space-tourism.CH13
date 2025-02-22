@@ -10,7 +10,7 @@ export default function Commander() {
          <Box component='section' className={pagination ===  'Bob2' ? 'crew-item active' : 'crew-item'}>
             <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
             <Box className='crew--content' >
-              <Typography component='h2'>Flight Engineer
+              <Typography component='h2'> <span className='title-op'>Flight Engineer </span><br /> 
               <Typography component='strong'>Anousheh Ansari</Typography> </Typography>
               <Typography component='p'>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
   Ansari was the fourth self-funded space tourist, the first self-funded woman to 

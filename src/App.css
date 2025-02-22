@@ -33,16 +33,19 @@ html, body {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  overflow: auto;
 }
 
 .banner-Home {
-   background: url(./assets/assets/home/background-home-mobile.jpg) no-repeat ;
+   background: url(./assets/assets/home/background-home-mobile.jpg) no-repeat  ;
    background-size: cover;
    background-position: center;
 }
 
 .banner-Destination  {
    background: url(./assets/assets/destination/background-destination-mobile.jpg) no-repeat;
+   width: 100vw;
+   height: 100vh;
    background-size: cover;
    background-position: center;
 }
@@ -95,10 +98,9 @@ ul {
 }
 
 
-
 .link {
-   font-size: 1.4em;
-   margin: 1.5em 0;
+   font-size: 1em;
+   margin: 2.5em 0;
 }
 
 .link .num {
@@ -106,8 +108,10 @@ ul {
 }
 
 .link .title {
+   letter-spacing: 3px;
    font-weight: 300;
    text-transform: uppercase;
+   margin-left: .2em;
 }
 
 .link.active .title::after {
@@ -166,6 +170,7 @@ ul {
 #home-title {
    font-size: 1.2em;
    line-height: 77px;
+   margin-bottom: .7em;
    color: #D0D6F9;
    font-weight: 400;
   font-family: "Bellefair";
@@ -179,11 +184,12 @@ ul {
  }
 
  #home-txt {
+   
    color: #D0D6F9;
    letter-spacing: 1px;
    word-spacing: 2px;
    font-size: 1em;
-   line-height:25px;
+   line-height:20px;
  }
 
  #btn-container  {
@@ -209,6 +215,9 @@ ul {
    transform: scale(1.3);
    color: gray;
  }
+
+
+/* Destination-section */
 
 @keyframes rotate {
    0% {
@@ -272,11 +281,6 @@ ul {
    color: #fff;
 }
 
-.crew--content > h2 {
-   font-size: 1.7em;
-}
-
-
  .des-num {
    opacity: .5;
 }
@@ -288,7 +292,7 @@ ul {
 
 .box--Container {
    position: relative;
-   top: 55px;
+   top: 10px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -304,10 +308,12 @@ ul {
    background-color: #fff;
 }
 
+
+
 .planet-content .planet-title {
-   font-size: 2em;
+   font-size: 4em;
    letter-spacing: 5px;
-   margin:  0;
+   margin: .5em 0 -1em 0;
     text-transform: uppercase;
    font-weight: 400;
   font-family: "Bellefair";
@@ -316,23 +322,76 @@ ul {
 .row-infomation {
    display: flex;
    flex-direction: column;
-   /* justify-content: space-around; */
    align-items: center;
    margin: 1em 0;
+   
+}
+
+.row-infomation .item {
+   margin: .5em 0;
+}
+
+.row-infomation .item  .item-title {
+   font-size: 1.1em;
+   text-transform: uppercase;
+   line-height: 22px;
+   font-weight: 400;
+  font-family: "Barlow Condensed";
+}
+
+.row-infomation .item .item-subtitle {
+   font-family: "Bellefair", serif;
+  font-weight: 400;
+   text-transform: uppercase;
+   font-size: 2em;
+}
+
+.planet-content h2 {
+   position: relative;
+   top: -1em;
+   font-size: 3em;
 }
 
 .planet-content  p {
    font-size: .9em;
 }
 
+/* Crew-sectiom */
 
 .crew-item {
    display: none;
    padding: 2em;
 }
 
+.crew-item  {
+   color: #fff;
+}
+
+.crew--content  h2 {
+   text-transform: uppercase;
+   font-size: 1.7em;
+   margin-bottom: 1.3em;
+   
+  font-family: "Bellefair";
+  font-weight: 400;
+}
+.title-op {
+   opacity: .7;
+}
+
+.crew--content  h2 strong {
+   
+  font-family: "Bellefair";
+  font-weight: 400;
+   font-size: 1.2em;
+}
+
 .crew-item  .global-title .des-num {
    font-weight: 500;
+}
+
+.crew-item p {
+   color: #D0D6F9;
 }
 
 .crew-item.active {
@@ -340,6 +399,7 @@ ul {
    justify-content: center;
    text-align: center;
    align-items: center;
+   margin-top: -2em;
 }
 
 .container-Image img {
@@ -354,7 +414,11 @@ ul {
    justify-content: space-between;
    width: 100px;
    height: 15px;
-   margin: 1.7em auto 0 auto;
+   margin: 2em auto 0 auto;
+}
+
+.points-container .pagination:active, .points-container .pagination:hover {
+   opacity: .4;
 }
 
 .points-container .pagination  {
@@ -372,9 +436,9 @@ ul {
 
 @media (min-width:768px){
 
-   body {
+   /* body {
       overflow-x: hidden;
-   }
+   } */
 
    .nav-container, .nav-container.active{
       position: relative;
@@ -509,13 +573,73 @@ ul {
 
 
 
+
    
    .banner-Destination  {
       background: url(./assets/assets/destination/background-destination-tablet.jpg) no-repeat;
        background-size: cover;
    background-position: center;
    }
+
+   .box--Container {
+      
+      position: relative;
+      top: 4em;
+      padding: 1em 12.5em;
+   }
    
+
+   .planet-container img {
+      max-width: 60%;
+   }
+
+   .planet-content {
+      position: relative;
+      top: 9em;
+   }
+
+   .planet-container .global-title {
+      position: absolute;
+      top: -3em;
+      left: 2.2em;
+   }
+
+   .planet-content .planet-title {
+      font-size: 5em;
+   margin: .5em 0 -.5em 0;
+   }
+
+   .row-infomation {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   
+   
+
+   .tabBar ul li{
+      margin: 0 1em;
+   }
+   
+
+
+   
+/* .box--Container {
+   position: relative;
+   top: 55px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 1em 3em;
+   background-color: darkblue;
+}
+   
+
+.box--Container.active {
+   display:flex !important;
+} */
+
    .banner-Crew {
       background: url(./assets/assets/crew/background-crew-tablet.jpg) no-repeat;
        background-size: cover;

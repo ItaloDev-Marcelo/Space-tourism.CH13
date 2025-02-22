@@ -9,9 +9,10 @@ export default function EuropePage({tab1, tab2, tab3, tab4}) {
 
       return  (
              <Box className={destinationData === 'Europe' ? 'box--Container active' : 'box--Container'}>
-                 <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
-          
+                 
             <Box className='planet-container'>
+            <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+          
                 <img src={Europe} alt='europe' />
             </Box>
             <Box className='planet-content' component='section'>

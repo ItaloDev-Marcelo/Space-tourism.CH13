@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import Destination from "./pages/Destination"
 import Crew from "./pages/Crew"
 import Tecnhology from "./pages/Tecnhology"
-import Error404 from "./pages/Error"
 function App() {
 
   return (
