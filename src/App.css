@@ -367,7 +367,7 @@ ul {
    color: #fff;
 }
 
-.crew--content  h2 {
+.crew--content  h2, .content-info h2{
    text-transform: uppercase;
    font-size: 1.7em;
    margin-bottom: 1.3em;
@@ -375,11 +375,12 @@ ul {
   font-family: "Bellefair";
   font-weight: 400;
 }
+
 .title-op {
    opacity: .7;
 }
 
-.crew--content  h2 strong {
+.crew--content  h2 strong, .content-info h2 strong {
    
   font-family: "Bellefair";
   font-weight: 400;
@@ -390,7 +391,7 @@ ul {
    font-weight: 500;
 }
 
-.crew-item p {
+.crew-item p, .content-info p {
    color: #D0D6F9;
 }
 
@@ -433,6 +434,95 @@ ul {
 .points-container .pagination.active {
    background: #fff;
 }
+
+/* Tec  */
+
+.Tac-container {
+   display: none;
+}
+
+.Tac-container.active {
+   display: block;
+}
+
+.Tac-container h1 {
+   text-align: center;
+}
+
+.container-image img {
+   max-width: 101%;
+   height: 35vh;
+   margin-top: 2em;
+}
+
+.Desktop {
+   display: none;
+}
+
+.Tac-content {
+   position: relative;
+   top: -75px;
+}
+
+.Tac-Nav ul {
+   display: flex;
+   position: relative;
+   top: 0;
+   justify-content: center;
+   margin-bottom: 2em;
+}
+
+.Tac-Link:nth-child(1) {
+   margin-left: 0;
+}
+
+.Tac-Link {
+   width: 40px;
+   height: 40px;
+   align-content: center;
+   text-align: center;
+   border: 1px solid #fff;
+   margin: 0 1em;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.Tac-Link:hover {
+   background-color: #fff;
+}
+
+.Tac-Link:hover a{
+   color: #0B0D17;
+}
+
+.Tac-Link.active {
+   background-color: #fff;
+}
+
+.Tac-Link.active a{
+   color: #0B0D17;
+}
+
+.content-info {
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   padding: .5em 2em;
+}
+
+.content-info h2 {
+   font-size: 1.3em;
+   line-height: 40px;
+   color: #fff;
+}
+
+.content-info h2 strong {
+   font-size: 1.4em;
+}
+
+
+
 
 @media (min-width:768px){
 
