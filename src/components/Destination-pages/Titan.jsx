@@ -12,7 +12,7 @@ export default function TitansPage({tab1, tab2, tab3, tab4}) {
             <Box className={destinationData === 'Titan' ? 'box--Container active' : 'box--Container'}>
         
             <Box className='planet-container'>
-            <h1 className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></h1>
+            <Typography component='h1' className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></Typography>
           
                 <img src={Titan} alt='titan' />
             </Box>
