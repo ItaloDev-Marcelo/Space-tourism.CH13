@@ -171,7 +171,7 @@ ul {
    font-size: 1.2em;
    line-height: 77px;
    margin-bottom: .7em;
-   color: #D0D6F9;
+   color: #fff;
    font-weight: 400;
   font-family: "Bellefair";
  }
@@ -181,6 +181,7 @@ ul {
  #home-title .up-title {
    font-size: 5em;
    font-weight: 400;
+   color: #fff;
  }
 
  #home-txt {
@@ -425,8 +426,8 @@ ul {
    width: 10px;
    height: 10px;
    border-radius: 50%;
-   background: #0B0D17;
-   opacity: .7;
+   background: #000000;
+   opacity: .8;
 }
 
 .points-container .pagination.active {
@@ -834,33 +835,30 @@ ul {
       font-size: 1.4em;
       margin: 1em 1.5em;
    }
-
-
    
    .link.active .title::after {
       position: absolute;
       top: 77px;
-      left: 75px;
-      display: inline-flex;
-      width: 77px;
+      left: 85px;
+      width: 80px;
    }
 
    .link:nth-of-type(2).active .title::after {
       top: 77px;
-      left:210px;
-      width: 120px;
+      left:225px;
+      width: 150px;
    }
 
    .link:nth-of-type(3).active .title::after {
       top: 77px;
-      left:385px;
-      width: 65px;
+      left:435px;
+      width: 79px;
    }
 
    .link:nth-of-type(4).active .title::after {
       top: 77px;
-      left:510px;
-      width: 120px;
+      left:570px;
+      width: 155px;
    }
    
 
@@ -946,13 +944,289 @@ ul {
       justify-content: space-between;
    }
 
-  
-   
+
    .banner-Crew {
       background: url(./assets/assets/crew/background-crew-desktop.jpg) no-repeat;
+   }
+
+   .container-Image img {
+      position: relative;
+      top: 0;
+      max-width: 65%;
+   }
+   
+
+   .crew-item.active {
+      position: relative;
+      left: 7%;
+      display: inline-flex ;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align:left;
+      align-items: center;
+      margin: 2em auto 0 auto ;
+      max-width: 1200px;
+   }
+
+   .crew-item .global-title {
+      position: absolute;
+      top: -1em;
+      left: 10em;
+   }
+
+   
+.points-container {
+   position: absolute;
+   top: 20em;
+   left: 0;
+   margin-top: 2em;
+}
+
+   .crew--content  {
+      position: relative;
+      top: -3em;
+      text-align: left;
+      width: 500px;
    }
    
    .banner-Tecnhology {
       background: url(./assets/assets/technology/background-technology-desktop.jpg) no-repeat;
    }
+
+   .Mobile {
+      display: none;
+   }
+
+   .Desktop {
+      display: block;
+      position: relative;
+      right: -8em;
+   }
+
+   .Tac-container.active {
+      position: relative;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      overflow-x: hidden;
+   }
+
+   .Tac-container h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+   }
+
+   .Tac-content {
+      display: flex;
+      flex-direction: row ;
+      position: relative;
+      top:50px;
+      padding: 0;
+      width: 600px;
+   }
+
+
+   .content-info {
+      text-align: left;
+      align-self: flex-start;
+      margin-top: -1em;
+      margin-left: 3em;
+   }
+
+   .Tac-Link {
+      align-content: center;
+      margin:  1.7em 0;
+   }
+   
+
+   .Tac-Nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+   }
 }
+
+
+
+@media (min-width:1440px) {
+
+   header {
+      padding: 2em 0 0 2em;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .line {
+      position: relative;
+      left: 1em;
+      width: 50%;
+      height: 1px;
+      margin: 0 1em;
+      background-color: #fff;
+   opacity: .7;
+   }
+
+   .nav-container, .nav-container.active{
+      width: 100%;
+      right: -50em ;
+      justify-content: flex-end;
+   }
+   
+   .link {
+      font-size: 1.5em;
+      margin: 1em 1.7em;
+   }
+   
+   .link.active .title::after {
+      width: 87px;
+   }
+
+   .link:nth-of-type(2).active .title::after {
+      left:250px;
+      width: 152px;
+   }
+
+   .link:nth-of-type(3).active .title::after {
+      left:475px;
+      width: 85px;
+   }
+
+   .link:nth-of-type(4).active .title::after {
+      left:637px;
+   }
+
+
+   .container-home {
+      padding:  12em 7em 2em 10em;
+   }
+
+   .space-btn {
+      transform: scale(1.2);
+   }
+
+   .space-btn:hover::after, .space-btn:active::after {
+      transform: scale(1.4);
+   }
+
+   .space-btn span {
+      font-size: 2em;
+   }
+
+   .box--Container {
+      position: relative;
+      top: 10em;
+      justify-content: space-evenly;
+      padding: 1em 12.5em;
+   }
+
+      .planet-content .planet-title {
+      font-size: 5em;
+   margin: .5em 0 -1em 0;
+   }
+
+
+   .planet-container .global-title {
+      margin-top: -3em;
+   }
+
+   .planet-content {
+      max-width: 500px;
+   }
+
+   .tabBar ul {
+      left: -6em;
+     }
+   
+
+   .planet-content p {
+      font-size: 1.4em;
+   }
+
+
+   .row-infomation {
+      justify-content: flex-start;
+   }
+
+   .row-infomation .item:nth-of-type(2) {
+      margin-left: 7em;
+   }
+
+
+   .planet-container img {
+      max-width: 100%;
+   }
+
+
+   
+   .container-Image img {
+      position: relative;
+      top: 0;
+      max-width: 100%;
+   }
+   
+
+   .crew-item.active {
+      position: relative;
+      left: 7%;
+      display: inline-flex ;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align:left;
+      align-items: center;
+      margin: 2em auto 0 auto ;
+      max-width: 1200px;
+   }
+
+   .crew-item.active{
+      top: 2em;
+   }
+
+     .crew-item.active  .container-Image img {
+      position: relative;
+      left: 4em ;
+   }
+   
+   .crew-item.active:nth-child(2)   .container-Image img {
+      position: relative;
+   }
+   
+
+   .crew-item .global-title {
+      position: absolute;
+      top: 2em;
+      left: 7em;
+   }
+
+
+   .Desktop {
+      display: block;
+      position: relative;
+      top: 2em;
+      right: -12em;
+   }
+
+
+
+
+   .Tac-content  p {
+      font-size: 1.3em;
+   }
+   
+
+   .Tac-container.active {
+      height: 75vh;
+   }
+
+   .Tac-Link {
+      margin:  2.5em 0;
+   }
+   
+
+
+
+}
+

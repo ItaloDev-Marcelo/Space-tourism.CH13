@@ -16,13 +16,15 @@ export default function Capsule() {
                <img src={CapsulaDesktop} alt='' className='Desktop' />
                </Box>
                <Box className='Tac-content'>
-                 <nav className='Tac-Nav'>
+               <div>
+               <nav className='Tac-Nav'>
                     <ul>
                         <li className='Tac-Link' onClick={() => TacNav('Crew1')}><a href='#'>1</a></li>
                         <li className='Tac-Link' onClick={() => TacNav('Crew2')}><a href='#'>2</a></li>
                         <li className='Tac-Link active' onClick={() => TacNav('Crew3')}><a href='#'>3</a></li>
                     </ul>
                  </nav>
+               </div>
                  <Box className='content-info'>
                    <Typography component='h2'> <span className='title-op'>The terminology...</span> <br /> <strong>Space capsule</strong> </Typography>
                    <Typography component='p'> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
