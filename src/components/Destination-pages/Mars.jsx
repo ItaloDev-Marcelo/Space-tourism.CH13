@@ -7,14 +7,14 @@ import Mars from '../../assets/assets/destination/image-mars.webp';
 export default function MarsPage({tab1, tab2, tab3, tab4}) {
   const {destinationData, nav } = useContext(GlobalContext) 
     return  (
-        <Box className={destinationData === 'Mars' ? 'box--Container active' : 'box--Container'}>
+        <Box component='section' className={destinationData === 'Mars' ? 'box--Container active' : 'box--Container'}>
         
-        <Box className='planet-container'>
+        <Box className='planet-container' >
         <Typography component='h1' className='global-title'><span className='des-num'>01</span> <span className='t1'>pick your destination</span></Typography>
           
               <img src={Mars} alt='mars' />
         </Box>
-        <Box className='planet-content' component='section'>
+        <Box className='planet-content' >
             <Box component='article'>
             <nav className='tabBar'>
                  <ul>

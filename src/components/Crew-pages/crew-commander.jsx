@@ -9,7 +9,7 @@ export default function Commander1() {
 
     return (
          <Box component='section' className={pagination ===  'Bob1' ? 'crew-item active' : 'crew-item'}>
-            <h1 className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></h1>
+            <Typography  component='h1' className='global-title'><span className='des-num'>02</span> <span className='t1'>Meet your crew</span></Typography >
             <Box className='crew--content' >
               <Typography component='h2'>  <span className='title-op'>Commander</span> <br /> 
               <Typography component='strong'>Douglas Hurley</Typography>  </Typography>

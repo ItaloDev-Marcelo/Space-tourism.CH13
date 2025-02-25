@@ -8,7 +8,7 @@ export default function Capsule() {
      const {tacPagination, TacNav } = useContext(GlobalContext);
      return (
           <Box component='section' className={tacPagination === 'Crew1' ? 'Tac-container active' : 'Tac-container'}>
-               <h1 className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></h1>
+               <Typography  component='h1' className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></Typography >
                <Box className='container-image' >
                  <img src={VehicleMobile} alt='' className='Mobile' />
                  <img src={VehicleDesk } alt='' className='Desktop' />

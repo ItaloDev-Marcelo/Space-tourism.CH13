@@ -9,7 +9,7 @@ export default function Capsule() {
 
      return (
           <Box component='section' className={tacPagination === 'Crew2' ? 'Tac-container active' : 'Tac-container'}>
-               <h1 className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></h1>
+               <Typography  component='h1'  className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></Typography >
                <Box className='container-image' >
                  <img src={SpacePortMobile} alt='' className='Mobile' />
                  <img src={SpacePortDesktop} alt='' className='Desktop' />

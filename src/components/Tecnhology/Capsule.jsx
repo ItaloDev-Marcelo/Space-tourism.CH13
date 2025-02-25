@@ -10,21 +10,19 @@ export default function Capsule() {
 
      return (
           <Box component='section' className={tacPagination === 'Crew3' ? 'Tac-container active' : 'Tac-container'}>
-               <h1 className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></h1>
+               <Typography component='h1' className='global-title'><span className='des-num'>03</span> <span className='t1'>space lunch 101</span></Typography >
                <Box className='container-image' >
                <img src={CapsulaMobile } alt='' className='Mobile' />
                <img src={CapsulaDesktop} alt='' className='Desktop' />
                </Box>
                <Box className='Tac-content'>
-               <div>
-               <nav className='Tac-Nav'>
+                 <nav className='Tac-Nav'>
                     <ul>
                         <li className='Tac-Link' onClick={() => TacNav('Crew1')}><a href='#'>1</a></li>
                         <li className='Tac-Link' onClick={() => TacNav('Crew2')}><a href='#'>2</a></li>
                         <li className='Tac-Link active' onClick={() => TacNav('Crew3')}><a href='#'>3</a></li>
                     </ul>
                  </nav>
-               </div>
                  <Box className='content-info'>
                    <Typography component='h2'> <span className='title-op'>The terminology...</span> <br /> <strong>Space capsule</strong> </Typography>
                    <Typography component='p'> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 

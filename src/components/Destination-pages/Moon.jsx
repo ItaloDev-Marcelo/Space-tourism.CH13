@@ -11,7 +11,7 @@ export default function MoonPage({tab1, tab2, tab3, tab4}) {
      const {destinationData, nav } = useContext(GlobalContext) 
      
 
-     return <Box className={destinationData === 'Moon' ? 'box--Container active' : 'box--Container'}>
+     return <Box component='section' className={destinationData === 'Moon' ? 'box--Container active' : 'box--Container'}>
       
           
      <Box className='planet-container'>
@@ -19,7 +19,7 @@ export default function MoonPage({tab1, tab2, tab3, tab4}) {
           
        <img src={Moon} alt='moon' />
      </Box>
-     <Box className='planet-content' component='section'>
+     <Box className='planet-content' >
 
          <Box component='article'>
          <nav className='tabBar'>
